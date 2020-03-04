@@ -1,0 +1,167 @@
+.madnify-admin-page-content {
+	margin-top:30px;
+}
+.madnify-loaded-extensions {
+	margin-bottom:50px;
+}
+.madnify-extension {
+	background:white;
+	margin-bottom:15px;
+	border: 2px solid #DDDDDD;
+	padding: 5px 15px 5px 5px;
+	display:flex;
+	position:relative;
+}
+.madnify-screenshot,
+.madnify-details {
+	vertical-align:top;
+	width: 100%;
+}
+.madnify-screenshot {
+	width:200px;
+	min-width:200px;
+	min-height:200px;
+	text-align: center;
+	position:relative;
+	overflow:hidden;
+}
+.madnify-screenshot img {
+	max-width: 100%;
+	position:absolute;
+	left:0;
+	right:0;
+	top:50%;
+	transform:translateY(-50%);
+}
+.madnify-details {
+	padding-left:15px;
+}
+.madnify-extension-title {
+	line-height:1.2;
+	border-bottom: 1px solid #DDD;
+	padding: 2px 0px;
+	margin-bottom:0;
+}
+.madnify-extension-version {
+	opacity: 0.5;
+	font-style: oblique;
+	float:right;
+	font-weight:400;
+	font-size: 80%;
+	line-height:2;
+}
+.madnify-extension-description {
+	font-weight:400;
+}
+.madnify-extension-function {
+	border-radius: 15px;
+	line-height: 1;
+	padding: 5px 10px;
+	color: white;
+	margin: 0px 5px 5px 0px;
+	display:inline-block;
+	position:relative;
+}
+.madnify-extension-effects {
+	display:none;
+	overflow:hidden;
+}
+.madnify-extension-effects-inner {
+	display:inline-block;
+	background: #DDD;
+	padding: 10px;
+	border-radius: 15px;
+	margin-bottom:15px;
+}
+.madnify-extension-effects ul,
+.madnify-extension-effects li,
+.madnify-extension-effects p {
+	margin: 0;
+}
+.madnify-extension-effects h1,
+.madnify-extension-effects h2,
+.madnify-extension-effects h3,
+.madnify-extension-effects h4,
+.madnify-extension-effects h5,
+.madnify-extension-effects h6 {
+	margin-top:0;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #444;
+}
+.madnify-extension-function.has-effects {
+	padding-right: 20px;
+}
+.madnify-extension-function.has-effects:hover,
+.madnify-extension-function.has-effects:focus {
+	cursor: pointer;
+}
+.madnify-extension-function.has-effects::after {
+	content: "";
+    position: absolute;
+    border: 5px solid transparent;
+    border-top-color: white;
+    right: 7px;
+    bottom: 10%;
+    display:block;
+}
+.madnify-extension-function.has-effects.effects-revealed {
+	display:table;
+}
+.madnify-extension-function.has-effects.effects-revealed:after {
+	border-bottom-color:white;
+	border-top-color:transparent;
+	bottom:auto;
+	top:10%;
+}
+.madnify-effects-list li {
+	margin-bottom:5px;
+}
+.madnify-shortcodes-list {
+	list-style-type: disc;
+	padding-left: 20px;
+}
+.madnify-templates-list:not(:last-child) {
+	margin-bottom:10px;
+}
+.madnify-effects-list li b {
+	margin-right: 5px;
+	font-weight: 700;
+	font-size: 90%;
+	font-family: monospace;
+}
+.madnify-extension-function {
+	background: #0096EE;
+}
+.madnify-extension-function-admin_enqueue_styles,
+.madnify-extension-function-admin_enqueue_scripts {
+	background: #053D5E;
+}
+.madnify-extension-function-admin_pages,
+.madnify-extension-function-acf_register_options,
+.madnify-extension-function-rest_endpoints,
+.madnify-extension-function-posttypes {
+	background: #002D4C;
+}
+.madnify-extension-function-frontend_enqueue_scripts,
+.madnify-extension-function-frontend_enqueue_styles {
+	background: #0F7DBC;
+}
+.madnify-extension-function-shortcodes,
+.madnify-extension-function-templates {
+	background: #02507C;
+}
+.madnify-failed-extensions h4 {
+	margin-bottom: 5px
+}
+.madnify-failed-extensions-list {
+	margin-top:0;
+	list-style-type: disc;
+	margin-left: 20px;
+}
+@media(max-width:960px) {
+	.madnify-screenshot {
+		width:100px;
+		min-width:100px;
+		min-height:100px;
+	}
+}
